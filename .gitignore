@@ -35,3 +35,4 @@ phpstorm.php
 
 ## Env variables
 .env
+*.zip

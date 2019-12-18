@@ -15,9 +15,21 @@ class Users extends CI_Controller
 
 	public function index()
 	{
-		$this->form_validation->set_rules('username', 'Username', 'required|is_unique[users.username]');
-		$this->form_validation->set_rules('email', 'Email', 'required|is_unique[users.email]|valid_email|callback_not_disposable_email');
-		$this->form_validation->set_rules('captchaResponse', 'Captcha Response', 'required|callback_valid_captcha');
+		$this->form_validation->set_rules(
+			'username',
+			'Username',
+			'trim|required|is_unique[users.username]|max_length[50]'
+		);
+		$this->form_validation->set_rules(
+			'email',
+			'Email',
+			'trim|required|is_unique[users.email]|valid_email|callback_not_disposable_email|max_length[50]'
+		);
+		$this->form_validation->set_rules(
+			'captchaResponse',
+			'Captcha Response',
+			'trim|required|callback_valid_captcha'
+		);
 
 		/*
 		 * Check if credentials are valid.
