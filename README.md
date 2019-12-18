@@ -1,4 +1,4 @@
-<a href="http://fvcproductions.com"><img src="https://img.icons8.com/plasticine/2x/user.png" title="FVCproductions" alt="FVCproductions"></a>
+<img src="https://img.icons8.com/plasticine/2x/user.png" alt="UserPanel">
 
 
 ***USER PANEL***  
