@@ -14,7 +14,7 @@
 						<input type="email" id="inputEmail" class="form-control" placeholder="Email address" autofocus>
 						<label for="inputEmail">Email address</label>
 					</div>
-					<div class="g-recaptcha" data-sitekey="6LfhPsgUAAAAADJPgVlh0mC-HrSwqgKY_DFnhE-l"></div>
+					<div class="g-recaptcha" data-sitekey="<?= env('reCAPTCHA_SITE_KEY') ?>"></div>
 					<br>
 					<button id="submitButton" class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">
 						Register

@@ -75,7 +75,7 @@ class Users extends CI_Controller
 
 		$request_body = [
 			'query' => [
-				'secret' => CAPTCHA_SECRET_KEY,
+				'secret' => env('reCAPTCHA_SECRET_KEY'),
 				'response' => $captchaResponse,
 				'remoteip' => $_SERVER['REMOTE_ADDR']
 			]

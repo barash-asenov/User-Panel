@@ -31,7 +31,6 @@ $.noConflict();
 				$('#form-signup').html('').trigger('reset');
 				$('#signupTitle').html('');
 				$('#alertBox').html(message).removeClass('alert-danger').addClass('alert alert-success');
-				grecaptcha.reset();
 			},
 			error: function (response) {
 				try {
@@ -48,6 +47,7 @@ $.noConflict();
 				}
 			},
 			complete: function () {
+				grecaptcha.reset();
 				$('#submitButton')
 					.html('Register')
 					.removeClass('btn-secondary')

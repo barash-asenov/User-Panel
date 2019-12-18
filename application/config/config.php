@@ -527,4 +527,3 @@ $config['proxy_ips'] = '';
  */
 define('CAPTCHA_VERIFY_ADDRESS', 'https://www.google.com/recaptcha/api/');
 define('DISPOSABLE_CHECK_API', 'https://open.kickbox.com/v1/disposable/');
-define('CAPTCHA_SECRET_KEY', '6LfhPsgUAAAAAIxmcfcl16UA4Zt_jEmJ0YJCEucK');

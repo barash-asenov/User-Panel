@@ -32,3 +32,6 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 
 ## Dev tools
 phpstorm.php
+
+## Env variables
+.env
